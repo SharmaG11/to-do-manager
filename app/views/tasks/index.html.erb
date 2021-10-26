@@ -1,8 +1,9 @@
 <h2>To Do Manager</h2>
 <ul>
   <% @tasks.each do |task| %>
-  <li><%= link_to task.title, task_path(task.id) %></li>
+  <li><%= link_to task.title, task_path(task.id) %>
   <%= link_to "Delete", task_path(task.id), method: :delete %>
+  </li>
   <% end %>
   
 </ul>
